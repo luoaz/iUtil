@@ -1,0 +1,24 @@
+﻿<html>
+<head>
+<script src="iUtil-debugger.js" ></script>
+
+</head>
+<body>
+<div > 测试选择对象 
+<input type="button" value="获取对象" onclick="getObj();">
+</div>
+<div>测试内容:<input name="span1" value="sssssss" />
+<input name="span1" value="aaaa" />
+</div>
+</body>
+
+<script>
+function Remind(){
+	alert("done")
+}
+function getObj(){
+	iUtil.attachEvent(document.body,"onload",Remind);
+}
+getObj();
+</script>
+</html>
