@@ -1,11 +1,12 @@
 ﻿/**
-*创建全局对象iUtil
+*@description 创建全局对象iUtil
+*@author luoaz
 */
 var iUtil = {};
-/*操作DOM对象*/
 /**
-description:根据传入的标示符来获取单个DOM对象
-paras:id：要获取对象的表示符，是一个对象的id或name
+@description 根据传入的标示符来获取单个DOM对象
+@param {String} id 要获取对象的表示符，是一个对象的id或name
+@author luoaz
 */
 iUtil.$ = function(id){
 	var obj = document.getElementById(id);
@@ -17,17 +18,19 @@ iUtil.$ = function(id){
 	}
 }
 /**
-description:根据传入的标示符来获取多个DOM对象
-paras:name:要获取对象的name属性
+@description 根据传入的标示符来获取多个DOM对象
+@param {String} name 要获取对象的name属性
+@author luoaz
 */
 iUtil.$$ = function(name){
 	return document.getElementsByName(name);
 }
 /**
 description:绑定对象事件
-paras:domObj:要绑定事件的对象
-	  evt:要绑定的事件
-	  func:事件的回调函数
+@param {String} domObj 要绑定事件的对象
+@param {String} evt 要绑定的事件
+@param  {String} func 事件的回调函数
+@author luoaz
 */
 iUtil.attachEvent = function(domObj,evt,func){
 	if(domObj.attachEvent){
